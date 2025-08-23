@@ -1,16 +1,33 @@
-## Hi there 👋
+<h1 align="center">سلام، من محمدجواد هستم! 👋</h1>
 
-<!--
-**MohammadJavadQm/mohammadjavadQM** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<p align="center">
+  <em>یک توسعه‌دهنده فرانت‌اند متخصص در React.js و Next.js که به ساخت وب‌اپلیکیشن‌های کاربردی و زیبا علاقه دارم.</em>
+</p>
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 🛠️ مهارت‌ها و تکنولوژی‌ها
+
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=react,nextjs,js,html,css,tailwind,vite,firebase" />
+  </a>
+</p>
+
+---
+
+### 📊 آمار فعالیت من در گیت‌هاب
+
+<p align="center">
+  &nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=mohammadjavadqm&show_icons=true&theme=tokyonight&rank_icon=github" alt="mohammadjavadqm" />
+  <br><br>
+  &nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mohammadjavadqm&layout=compact&theme=tokyonight" alt="mohammadjavadqm" />
+</p>
+
+---
+
+### 🔗 راه‌های ارتباطی
+
+<p align="center">
+  <a href="[لینک پروفایل لینکدین خودت رو اینجا بذار]" target="blank"><img align="center" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin-profile"/></a>
+  </p>
