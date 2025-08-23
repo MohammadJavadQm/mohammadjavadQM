@@ -3,7 +3,7 @@
   <h1 align="center" style="color: #58a6ff; font-family: monospace; margin: 0;">[ MOHAMMAD JAVAD'S MISSION CONTROL ]</h1>
   <p align="center" style="font-style: italic; color: #888;">Live data feed from my digital ecosystem.</p>
   <p align="center">
-    <a href="https://wakatime.com/@{YOUR_WAKATIME_USERNAME}"><img src="https://wakatime.com/badge/user/YOUR_WAKATIME_USERNAME/hours_since_today.svg" alt="wakatime"></a>
+    <a href="https://wakatime.com/@YOUR_WAKATIME_USERNAME"><img src="https://wakatime.com/badge/user/YOUR_WAKATIME_USERNAME/hours_since_today.svg" alt="wakatime"></a>
     <img src="https://img.shields.io/github/followers/mohammadjavadqm?label=Followers&style=social" alt="GitHub Followers">
     <img src="https://komarev.com/ghpvc/?username=mohammadjavadqm&label=Profile%20Views&color=blueviolet&style=flat-square" alt="Profile Views">
   </p>
