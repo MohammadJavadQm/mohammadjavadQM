@@ -1,8 +1,9 @@
 <div align="center">
 
-<h1 style="font-size: 3.5rem; font-weight: 700; margin-bottom: 0; letter-spacing: -2px;">Mohammad Javad Qasemi</h1>
-<p style="font-size: 1.2rem; color: #666; margin-top: 10px;">Frontend Engineer specializing in creating exceptional digital experiences.</p>
-<p>
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=35&pause=1000&color=0A66C2&center=true&vCenter=true&width=600&lines=Mohammad+Javad+Qasemi;Frontend+Engineer;Digital+Experience+Architect" alt="Typing SVG" />
+</a>
+<p align="center">
   <a href="YOUR_LINKEDIN_URL_HERE"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="mailto:mohammadjavad.qasemi.m@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
 </p>
@@ -18,7 +19,7 @@
 
 <br><br>
 
-<h2 style="border-bottom: 2px solid #eee; padding-bottom: 10px;">🚀 My Tech Stack</h2>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=70&section=🚀%20My%20Tech%20Stack&animation=fadeIn&fontSize=30" alt="Tech Stack Header"/>
 <table align="center" style="border: none; margin-top: 20px;">
   <tr valign="top">
     <td align="center" style="padding: 10px;">
@@ -38,38 +39,30 @@
 
 <br><br>
 
-<h2 style="border-bottom: 2px solid #eee; padding-bottom: 10px;">🏆 Featured Projects</h2>
-<table align="center" width="100%" style="max-width: 800px; border-collapse: separate; border-spacing: 0 15px;">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=70&section=🏆%20Featured%20Projects&animation=fadeIn&fontSize=30" alt="Projects Header"/>
+<table align="center" width="100%" style="max-width: 800px; border-collapse: separate; border-spacing: 0 15px; margin-top: 20px;">
   <tr style="background-color: #f6f8fa; border: 1px solid #ddd; border-radius: 10px; display: block; padding: 15px;">
     <td>
       <h3 style="margin: 0;"><a href="[LINK_TO_REPO_1]">Modern E-commerce Admin Panel</a></h3>
       <p style="font-size: 0.9rem; color: #555;">A comprehensive dashboard for managing products, orders, and users, built with a focus on a fast, responsive, and data-driven user interface.</p>
-      <p>
-        <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black">
-        <img src="https://img.shields.io/badge/Redux-764ABC?style=flat-square&logo=redux&logoColor=white">
-        <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black">
-      </p>
+      <p><img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"> <img src="https://img.shields.io/badge/Redux-764ABC?style=flat-square&logo=redux&logoColor=white"> <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black"></p>
     </td>
   </tr>
   <tr style="background-color: #f6f8fa; border: 1px solid #ddd; border-radius: 10px; display: block; padding: 15px;">
     <td>
       <h3 style="margin: 0;"><a href="[LINK_TO_REPO_2]">Next.js Portfolio Website</a></h3>
       <p style="font-size: 0.9rem; color: #555;">A personal portfolio website built with Next.js and Tailwind CSS, featuring smooth animations, a clean design, and fast page loads.</p>
-      <p>
-        <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white">
-        <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white">
-        <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white">
-      </p>
+      <p><img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white"> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"> <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white"></p>
     </td>
   </tr>
 </table>
 
 <br><br>
 
-<h2 style="border-bottom: 2px solid #eee; padding-bottom: 10px;">📊 My GitHub Stats</h2>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=70&section=📊%20My%20GitHub%20Stats&animation=fadeIn&fontSize=30" alt="Stats Header"/>
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=mohammadjavadqm&show_icons=true&theme=transparent&hide_border=true&rank_icon=github" alt="GitHub Stats" width="49%"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mohammadjavadqm&layout=compact&theme=transparent&hide_border=true" alt="Top Languages" width="49%"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=mohammadjavadqm&show_icons=true&theme=transparent&hide_border=true&rank_icon=github&cache_seconds=1800" alt="GitHub Stats" width="49%"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mohammadjavadqm&layout=compact&theme=transparent&hide_border=true&cache_seconds=1800" alt="Top Languages" width="49%"/>
 </p>
 
 <div align="center">
