@@ -1,11 +1,11 @@
 <div align="center">
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=35&pause=1000&color=0A66C2&center=true&vCenter=true&width=600&lines=Mohammad+Javad+Qasemi;Frontend+Engineer;Digital+Experience+Architect" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=35&pause=1000&color=0A66C2&center=true&vCenter=true&width=600&lines=Mohammad+Javad;Frontend+Engineer;Digital+Experience+Architect" alt="Typing SVG" />
 </a>
 <p align="center">
   <a href="YOUR_LINKEDIN_URL_HERE"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-  <a href="mailto:mohammadjavad.qasemi.m@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
+  <a href="mailto:mohammadjavad.m@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
 </p>
 
 <br>
