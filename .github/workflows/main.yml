@@ -1,61 +1,58 @@
-# GitHub Action برای تولید انیمیشن مار (Snake Animation) بر اساس فعالیت‌های گیت‌هاب
+# GitHub Action to generate and deploy a snake animation based on GitHub contributions
 name: Generate Snake Animation
 
-# رویدادهای فعال‌سازی Workflow
+# Triggers for the workflow
 on:
-  # اجرای خودکار روزانه در ساعت 00:00 UTC
+  # Run daily at 00:00 UTC
   schedule:
     - cron: "0 0 * * *"
-  # امکان اجرای دستی Workflow
+  # Allow manual trigger
   workflow_dispatch:
-  # اجرای Workflow هنگام push به شاخه main
+  # Run on push to the main branch
   push:
     branches:
       - main
 
-# مجوزهای مورد نیاز برای دسترسی به مخزن
+# Permissions required for writing to the repository
 permissions:
   contents: write
 
-# تعریف Job
+# Define the job
 jobs:
-  build:
-    # نام Job
+  generate-and-deploy:
     name: Generate and Deploy Snake Animation
-    # استفاده از آخرین نسخه اوبونتو
     runs-on: ubuntu-latest
 
-    # مراحل اجرای Job
     steps:
-      # 1. دریافت کد منبع از مخزن
+      # Step 1: Checkout the repository
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # دریافت تاریخچه کامل برای اطمینان از عملکرد صحیح
+          fetch-depth: 0 # Fetch full history for accurate contribution data
 
-      # 2. تولید انیمیشن مار با استفاده از اکشن Platane/snk
+      # Step 2: Generate snake animation SVG
       - name: Generate Snake Animation
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
-          # تولید فایل‌های SVG برای نمایش در README و تم‌های روشن و تیره
+          # Generate SVG outputs for light and dark themes
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg | dark
+            dist/github-snake.svg
+            dist/github-snake-dark.svg | dark
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # 3. انتشار فایل‌های تولیدشده به شاخه gh-pages
+      # Step 3: Deploy to gh-pages branch
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v4
         with:
-          target_branch: gh-pages # شاخه‌ای که فایل‌ها در آن منتشر می‌شوند
-          build_dir: dist # پوشه‌ای که فایل‌های تولیدشده در آن قرار دارند
-          keep_history: false # تاریخچه قبلی شاخه را پاک می‌کند تا حجم کاهش یابد
+          target_branch: gh-pages # Branch to deploy the animation
+          build_dir: dist # Directory containing generated files
+          keep_history: false # Clear previous history to reduce size
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # 4. اطلاع‌رسانی در مورد موفقیت یا شکست Workflow
+      # Step 4: Notify on failure (optional error reporting)
       - name: Notify on Failure
         if: failure()
         uses: actions/github-script@v7
@@ -65,5 +62,5 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: 1,
-              body: '❌ Workflow تولید انیمیشن مار با خطا مواجه شد. لطفاً لاگ‌ها را بررسی کنید.'
+              body: '❌ The snake animation workflow failed. Please check the logs for details.'
             })
