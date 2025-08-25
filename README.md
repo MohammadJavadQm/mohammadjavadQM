@@ -86,5 +86,5 @@ I'm driven by clean code, great user experiences, and the pursuit of learning ne
     <img alt="github-snake" src="https://mohammadjavadqm.github.io/mohammadjavadqm/github-snake.svg" />
   </picture>
 </p>
-
+![Snake animation](https://github.com/Platane/snk/raw/output/github-contribution-grid-snake.svg)
 </div>
