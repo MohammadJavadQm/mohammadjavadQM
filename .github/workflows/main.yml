@@ -1,20 +1,69 @@
+# GitHub Action برای تولید انیمیشن مار (Snake Animation) بر اساس فعالیت‌های گیت‌هاب
 name: Generate Snake Animation
+
+# رویدادهای فعال‌سازی Workflow
 on:
+  # اجرای خودکار روزانه در ساعت 00:00 UTC
   schedule:
     - cron: "0 0 * * *"
+  # امکان اجرای دستی Workflow
   workflow_dispatch:
+  # اجرای Workflow هنگام push به شاخه main
+  push:
+    branches:
+      - main
+
+# مجوزهای مورد نیاز برای دسترسی به مخزن
+permissions:
+  contents: write
+
+# تعریف Job
 jobs:
   build:
+    # نام Job
+    name: Generate and Deploy Snake Animation
+    # استفاده از آخرین نسخه اوبونتو
     runs-on: ubuntu-latest
+
+    # مراحل اجرای Job
     steps:
-      - uses: actions/checkout@v3
-      - uses: Platane/snk@v3
+      # 1. دریافت کد منبع از مخزن
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # دریافت تاریخچه کامل برای اطمینان از عملکرد صحیح
+
+      # 2. تولید انیمیشن مار با استفاده از اکشن Platane/snk
+      - name: Generate Snake Animation
+        uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
-          outputs: dist/github-contribution-grid-snake.svg
-      - uses: crazy-max/ghaction-github-pages@v3
-        with:
-          target_branch: output
-          build_dir: dist
+          # تولید فایل‌های SVG برای نمایش در README و تم‌های روشن و تیره
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg | dark
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # 3. انتشار فایل‌های تولیدشده به شاخه gh-pages
+      - name: Deploy to GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: gh-pages # شاخه‌ای که فایل‌ها در آن منتشر می‌شوند
+          build_dir: dist # پوشه‌ای که فایل‌های تولیدشده در آن قرار دارند
+          keep_history: false # تاریخچه قبلی شاخه را پاک می‌کند تا حجم کاهش یابد
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # 4. اطلاع‌رسانی در مورد موفقیت یا شکست Workflow
+      - name: Notify on Failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: 1,
+              body: '❌ Workflow تولید انیمیشن مار با خطا مواجه شد. لطفاً لاگ‌ها را بررسی کنید.'
+            })
