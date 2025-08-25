@@ -1,66 +1,61 @@
-# GitHub Action to generate and deploy a snake animation based on GitHub contributions
-name: Generate Snake Animation
+name: Generate & Deploy Snake
 
-# Triggers for the workflow
 on:
-  # Run daily at 00:00 UTC
   schedule:
-    - cron: "0 0 * * *"
-  # Allow manual trigger
+    - cron: "0 0 * * *"   # هر روز ساعت 00:00 UTC
   workflow_dispatch:
-  # Run on push to the main branch
   push:
-    branches:
-      - main
+    branches: [main]
 
-# Permissions required for writing to the repository
 permissions:
-  contents: write
+  contents: write     # برای push به gh-pages
+  issues: write       # برای مرحله‌ی Notify (اختیاری)
 
-# Define the job
+concurrency:
+  group: snake
+  cancel-in-progress: true
+
 jobs:
-  generate-and-deploy:
-    name: Generate and Deploy Snake Animation
+  build-and-publish:
+    name: Build & Publish SVGs
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout the repository
-      - name: Checkout Repository
+      - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Fetch full history for accurate contribution data
+          fetch-depth: 0
 
-      # Step 2: Generate snake animation SVG
-      - name: Generate Snake Animation
+      - name: Generate snake SVGs (svg-only, faster)
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
-          # Generate SVG outputs for light and dark themes
           outputs: |
             dist/github-snake.svg
-            dist/github-snake-dark.svg | dark
+            dist/github-snake-dark.svg?palette=github-dark
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # Step 3: Deploy to gh-pages branch
-      - name: Deploy to GitHub Pages
+      - name: Deploy to gh-pages
         uses: crazy-max/ghaction-github-pages@v4
         with:
-          target_branch: gh-pages # Branch to deploy the animation
-          build_dir: dist # Directory containing generated files
-          keep_history: false # Clear previous history to reduce size
+          target_branch: gh-pages
+          build_dir: dist            # محتویات dist به ریشه‌ی شاخه gh-pages منتقل می‌شود
+          keep_history: false
+          commit_message: "chore: update snake [skip ci]"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # Step 4: Notify on failure (optional error reporting)
-      - name: Notify on Failure
+      # اختیاری: اگر نمی‌خواهی کامنت روی ایشو بخورد، این مرحله را حذف کن
+      - name: Notify on failure
         if: failure()
         uses: actions/github-script@v7
         with:
           script: |
-            github.rest.issues.createComment({
+            const runUrl = `https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: 1,
-              body: '❌ The snake animation workflow failed. Please check the logs for details.'
-            })
+              body: `❌ Snake animation workflow failed. Logs: ${runUrl}`
+            });
