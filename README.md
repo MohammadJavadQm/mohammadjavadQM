@@ -13,15 +13,18 @@
   <a href="mailto:mohammadjavad.m@gmail.com">
     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
   </a>
+  <a href="https://twitter.com/YOUR_TWITTER">
+    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter">
+  </a>
 </p>
 
 ---
 
 ## 👋 About Me
-<div style="max-width: 700px; text-align: left; padding: 15px; border-radius: 10px; border: 1px solid #ddd;">
-I'm a passionate software engineer focused on frontend development and building performant, scalable, and user-friendly web apps.  
-I enjoy React & Next.js ecosystems, turning complex problems into elegant solutions.  
-Driven by clean code, excellent UX, and continuous learning.
+<div style="max-width: 700px; text-align: left; padding: 15px; border-radius: 15px; border: 2px solid #eee; background: linear-gradient(135deg,#f0f0f0,#d9d9d9);">
+I'm a passionate software engineer focused on frontend development, building performant, scalable, and user-friendly web apps.  
+I enjoy working with **React & Next.js**, turning complex problems into elegant solutions.  
+Driven by **clean code**, **excellent UX**, and continuous learning.
 </div>
 
 ---
@@ -35,11 +38,11 @@ Driven by clean code, excellent UX, and continuous learning.
     </td>
     <td align="center" width="33%">
       <h3>Styling & UI</h3>
-      <img src="https://skillicons.dev/icons?i=tailwind,css,html,emotion,figma&theme=light&perline=3" />
+      <img src="https://skillicons.dev/icons?i=tailwind,css,html,emotion,figma,chakra&theme=light&perline=3" />
     </td>
     <td align="center" width="33%">
       <h3>Tools & Platforms</h3>
-      <img src="https://skillicons.dev/icons?i=docker,git,github,actions,firebase&theme=light&perline=3" />
+      <img src="https://skillicons.dev/icons?i=docker,git,github,actions,firebase,vercel&theme=light&perline=3" />
     </td>
   </tr>
 </table>
@@ -48,8 +51,8 @@ Driven by clean code, excellent UX, and continuous learning.
 
 ## 🏆 Featured Projects
 <table align="center" width="100%" style="max-width: 800px; border-spacing: 0 15px;">
-  <tr style="background-color:#f6f8fa; border-radius: 10px;">
-    <td style="padding:15px;">
+  <tr style="background: linear-gradient(120deg,#fdfbfb,#ebedee); border-radius: 15px;">
+    <td style="padding:20px;">
       <h3><a href="https://github.com/mohammadjavadqm/REPO1">Modern E-commerce Admin Panel</a></h3>
       <p>A comprehensive dashboard for managing products, orders, and users with fast, responsive, data-driven UI.</p>
       <p>
@@ -59,10 +62,10 @@ Driven by clean code, excellent UX, and continuous learning.
       </p>
     </td>
   </tr>
-  <tr style="background-color:#f6f8fa; border-radius: 10px;">
-    <td style="padding:15px;">
+  <tr style="background: linear-gradient(120deg,#f6f8fa,#e8eaed); border-radius: 15px;">
+    <td style="padding:20px;">
       <h3><a href="https://github.com/mohammadjavadqm/REPO2">Next.js Portfolio Website</a></h3>
-      <p>A personal portfolio with Next.js + Tailwind CSS, smooth animations, clean design, fast loads.</p>
+      <p>Personal portfolio with Next.js + Tailwind CSS, smooth animations, clean design, fast page loads.</p>
       <p>
         <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white">
         <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white">
@@ -76,8 +79,8 @@ Driven by clean code, excellent UX, and continuous learning.
 
 ## 📊 GitHub Stats
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=mohammadjavadqm&show_icons=true&theme=transparent&hide_border=true&rank_icon=github&cache_seconds=1800" width="49%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mohammadjavadqm&layout=compact&theme=transparent&hide_border=true&cache_seconds=1800" width="49%" />
+  <img src="https://github-readme-stats.vercel.app/api?username=mohammadjavadqm&show_icons=true&theme=transparent&hide_border=true&rank_icon=github&cache_seconds=1800" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mohammadjavadqm&layout=compact&theme=transparent&hide_border=true&cache_seconds=1800" width="48%" />
 </p>
 
 ---
@@ -91,4 +94,16 @@ Driven by clean code, excellent UX, and continuous learning.
   </picture>
 </p>
 
+---
+
+## ✨ Fun Animations
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0A66C2&height=80&section=Let's+Code!&animation=fadeIn&fontSize=30" alt="Let's Code"/>
+  <p style="font-size:0.9rem; color:#555;">Keep coding, keep learning, and have fun building amazing projects!</p>
+</div>
+
+---
+
+<div align="center">
+  <p style="font-size:0.8rem; color:#aaa;">Made with ❤️ by Mohammad Javad</p>
 </div>
