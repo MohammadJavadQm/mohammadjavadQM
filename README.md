@@ -86,15 +86,18 @@ I love **clean code**, **smooth animations**, and **crafting delightful user exp
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mohammadjavadqm&layout=compact&theme=transparent&hide_border=true&cache_seconds=1800" width="48%" />
 </p>
 
----
-## 🐍 GitHub Snake
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mohammadjavadqm/mohammadjavadqm/output/github-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/mohammadjavadqm/mohammadjavadqm/output/github-snake.svg" />
-    <img alt="github-snake" src="https://raw.githubusercontent.com/mohammadjavadqm/mohammadjavadqm/output/github-snake.svg" />
-  </picture>
-</p>
+## 🐍 GitHub Contribution Snake
+
+<div align="center">
+
+  <!-- Dark Mode -->
+  ![GitHub Snake dark](https://raw.githubusercontent.com/MohammadJavadQm/mohammadjavadQM/output/github-contribution-grid-snake-dark.svg#gh-dark-mode-only)
+
+  <!-- Light Mode -->
+  ![GitHub Snake light](https://raw.githubusercontent.com/MohammadJavadQm/mohammadjavadQM/output/github-contribution-grid-snake.svg#gh-light-mode-only)
+
+</div>
+
 
 
 <!-- Dark/Light aware image using <picture> (works on GitHub) -->
