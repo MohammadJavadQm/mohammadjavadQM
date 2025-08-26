@@ -87,11 +87,14 @@ I love **clean code**, **smooth animations**, and **crafting delightful user exp
 </p>
 
 ---
-
-<!-- 🐍 GitHub Snake – README‑safe box (no <style>, no JS) -->
-![GitHub Snake dark](https://raw.githubusercontent.com/USERNAME/REPO/output/github-contribution-grid-snake-dark.svg)
-<div align="center" style="padding: 28px; border-radius: 24px; max-width: 880px; margin: 0 auto; background: linear-gradient(145deg,#e0e0e0,#cfcfcf); box-shadow: 0 20px 50px rgba(0,0,0,0.25); text-align: center;">
-<h2 style="font-size:1.35rem; font-weight:700; color:#0A66C2; margin:0 0 18px;">🐍 GitHub Snake</h2>
+## 🐍 GitHub Snake
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mohammadjavadqm/mohammadjavadqm/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/mohammadjavadqm/mohammadjavadqm/output/github-snake.svg" />
+    <img alt="github-snake" src="https://raw.githubusercontent.com/mohammadjavadqm/mohammadjavadqm/output/github-snake.svg" />
+  </picture>
+</p>
 
 
 <!-- Dark/Light aware image using <picture> (works on GitHub) -->
