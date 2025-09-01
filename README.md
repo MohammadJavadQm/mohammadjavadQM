@@ -90,10 +90,10 @@ I love **clean code**, **smooth animations**, and **crafting delightful user exp
 <div align="center">
 
   <!-- Dark Mode -->
-  ![GitHub Snake dark](https://raw.githubusercontent.com/MohammadJavadQm/mohammadjavadQM/output/github-contribution-grid-snake-dark.svg#gh-dark-mode-only)
+  ![GitHub Snake dark](https://github.com/mohammadjavadQM/mohammadjavadQM/blob/output/github-contribution-grid-snake-dark.svg#gh-dark-mode-only)
 
   <!-- Light Mode -->
-  ![GitHub Snake light](https://raw.githubusercontent.com/MohammadJavadQm/mohammadjavadQM/output/github-contribution-grid-snake.svg#gh-light-mode-only)
+  ![GitHub Snake light](https://github.com/mohammadjavadQM/mohammadjavadQM/blob/output/github-contribution-grid-snake.svg#gh-light-mode-only)
 
 </div>
 
