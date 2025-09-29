@@ -21,9 +21,12 @@
   </a>
 </p>
 
+</div>
+
 ---
 
 ## 👋 About Me
+
 Hi! I'm **Mohammad Javad**, a passionate **Frontend Engineer** who builds **scalable, elegant, and performant web apps**.  
 I specialize in **React**, **Next.js**, **Tailwind CSS**, and modern UI/UX design.  
 I love **clean code**, **smooth animations**, and **crafting delightful user experiences**. 🚀
@@ -31,6 +34,7 @@ I love **clean code**, **smooth animations**, and **crafting delightful user exp
 ---
 
 ## 🛠 Skills & Tech Stack
+
 <table align="center">
   <tr valign="top">
     <td align="center" width="33%">
@@ -51,9 +55,10 @@ I love **clean code**, **smooth animations**, and **crafting delightful user exp
 ---
 
 ## 💻 Featured Projects
+
 <table align="center" width="100%">
   <tr>
-    <td style="padding:20px;">
+    <td>
       <h3><a href="https://github.com/mohammadjavadqm/REPO1" target="_blank">Modern E-commerce Admin Panel</a></h3>
       <p>Comprehensive dashboard for managing products, orders & users with responsive, data-driven UI.</p>
       <p>
@@ -64,7 +69,7 @@ I love **clean code**, **smooth animations**, and **crafting delightful user exp
     </td>
   </tr>
   <tr>
-    <td style="padding:20px;">
+    <td>
       <h3><a href="https://github.com/mohammadjavadqm/REPO2" target="_blank">Next.js Portfolio Website</a></h3>
       <p>Personal portfolio with Next.js + Tailwind, smooth animations, clean design, and fast load times.</p>
       <p>
@@ -79,6 +84,7 @@ I love **clean code**, **smooth animations**, and **crafting delightful user exp
 ---
 
 ## 📊 GitHub Stats
+
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=mohammadjavadqm&show_icons=true&theme=transparent&hide_border=true&rank_icon=github&cache_seconds=1800" width="48%" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mohammadjavadqm&layout=compact&theme=transparent&hide_border=true&cache_seconds=1800" width="48%" />
@@ -87,6 +93,7 @@ I love **clean code**, **smooth animations**, and **crafting delightful user exp
 ---
 
 ## 🐍 GitHub Contribution Snake
+
 <div align="center">
 
   <!-- Dark Mode -->
@@ -100,14 +107,17 @@ I love **clean code**, **smooth animations**, and **crafting delightful user exp
 ---
 
 ## ⚡ Fun Animations
+
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0A66C2&height=90&section=header&animation=fadeIn&fontSize=32&text=Let's+Code!" alt="Let's Code"/>
-  <p style="font-size:0.9rem; color:#555;">Keep coding, keep learning, and enjoy crafting amazing web experiences! 🎨</p>
+  <br/>
+  <sub>Keep coding, keep learning, and enjoy crafting amazing web experiences! 🎨</sub>
 </div>
 
 ---
 
 ## 💡 Quick Tips
+
 - Always write **clean, maintainable code**  
 - Focus on **UI/UX excellence**  
 - Keep learning **new frameworks & tools**  
@@ -117,5 +127,5 @@ I love **clean code**, **smooth animations**, and **crafting delightful user exp
 ---
 
 <div align="center">
-  <p style="font-size:0.8rem; color:#aaa;">Made with ❤️ by <b>Mohammad Javad</b> | Inspired by Global Dev Communities</p>
+  <sub>Made with ❤️ by <b>Mohammad Javad</b> | Inspired by Global Dev Communities</sub>
 </div>
