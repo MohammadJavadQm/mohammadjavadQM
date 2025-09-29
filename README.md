@@ -94,12 +94,10 @@ I love **clean code**, **smooth animations**, and **crafting delightful user exp
 
 ## 🐍 GitHub Contribution Snake
 
-## 🐍 GitHub Contribution Snake
-
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/MohammadJavadQm/mohammadjavadQM/main/output/github-contribution-grid-snake.svg#gh-light-mode-only" alt="GitHub Snake" />
-<img src="https://raw.githubusercontent.com/MohammadJavadQm/mohammadjavadQM/main/output/github-contribution-grid-snake-dark.svg#gh-dark-mode-only" alt="GitHub Snake" />
+<img src="https://raw.githubusercontent.com/MohammadJavadQm/mohammadjavadQM/main/output/github-contribution-grid-snake.svg" alt="GitHub Snake" />
+<img src="https://raw.githubusercontent.com/MohammadJavadQm/mohammadjavadQM/main/output/github-contribution-grid-snake-dark.svg" style="display:none;" />
 
 </div>
 
