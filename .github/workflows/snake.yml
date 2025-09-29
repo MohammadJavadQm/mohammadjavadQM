@@ -1,0 +1,28 @@
+name: Generate Snake
+
+on:
+  schedule:    # هر روز ساعت ۱۲ شب اجرا بشه
+    - cron: "0 0 * * *"
+  workflow_dispatch:    # بتونی دستی اجرا کنی
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Generate snake SVGs
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            output/github-contribution-grid-snake.svg
+            output/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      - name: Commit and push SVGs
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Update generated snake SVGs
+          branch: main    # اگه شاخه‌ت چیز دیگه‌ایه، عوض کن

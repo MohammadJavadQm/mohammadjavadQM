@@ -96,8 +96,11 @@ I love **clean code**, **smooth animations**, and **crafting delightful user exp
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/MohammadJavadQm/MohammadJavadQm/main/output/github-contribution-grid-snake.svg" alt="GitHub Snake" />
-<img src="https://raw.githubusercontent.com/MohammadJavadQm/MohammadJavadQm/main/output/github-contribution-grid-snake-dark.svg" alt="GitHub Snake" style="display: none;" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MohammadJavadQm/MohammadJavadQm/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MohammadJavadQm/MohammadJavadQm/output/github-contribution-grid-snake.svg" />
+  <img alt="GitHub Snake" src="https://raw.githubusercontent.com/MohammadJavadQm/MohammadJavadQm/output/github-contribution-grid-snake.svg" />
+</picture>
 
 </div>
 
