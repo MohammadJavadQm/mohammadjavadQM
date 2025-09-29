@@ -8,16 +8,10 @@
 <!-- Social Links -->
 <p align="center">
   <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME/">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+    <img src="www.linkedin.com/in/mohammad-javad-dehfroz" alt="LinkedIn">
   </a>
   <a href="mailto:mohammadjavad.m@gmail.com">
     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
-  </a>
-  <a href="https://twitter.com/YOUR_TWITTER">
-    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter">
-  </a>
-  <a href="https://github.com/mohammadjavadqm">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
   </a>
 </p>
 
@@ -90,18 +84,6 @@ I love **clean code**, **smooth animations**, and **crafting delightful user exp
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mohammadjavadqm&layout=compact&theme=transparent&hide_border=true&cache_seconds=1800" width="48%" />
 </p>
 
----
-
-## 🐍 GitHub Contribution Snake
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/MohammadJavadQm/mohammadjavadQM/main/output/github-contribution-grid-snake.svg" alt="GitHub Snake" />
-<img src="https://raw.githubusercontent.com/MohammadJavadQm/mohammadjavadQM/main/output/github-contribution-grid-snake-dark.svg" style="display:none;" />
-
-</div>
-
----
 
 ## ⚡ Fun Animations
 
