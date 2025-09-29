@@ -1,37 +1,24 @@
-name: Generate Snake Animation
+name: generate-snake
 
 on:
   schedule:
-    - cron: "0 0 * * *"   # هر روز ساعت 00:00 UTC
-  workflow_dispatch:       # اجرا دستی از تب Actions
-  push:
-    branches: [main]       # هر بار push روی main
-
-permissions:
-  contents: write
+    - cron: "0 0 * * *"  # هر شب
+  workflow_dispatch:      # دستی هم میشه اجرا کرد
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
-
-      - name: Generate snake svg
-        uses: Platane/snk/svg-only@v3
+      - name: Generate Snake
+        uses: Platane/snk@v3
         with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github_user_name: MohammadJavadQm
+          outputs: dist/github-contribution-grid-snake.svg
 
-      - name: Deploy to GitHub Pages
-        uses: crazy-max/ghaction-github-pages@v4
+      - name: Push Snake
+        uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
-          target_branch: gh-pages
+          target_branch: output
           build_dir: dist
-          keep_history: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
