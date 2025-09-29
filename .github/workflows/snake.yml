@@ -1,7 +1,7 @@
 name: Generate Snake
 
 on:
-  workflow_dispatch:  # فقط دستی اجرا می‌شه
+  workflow_dispatch:  # فقط دستی اجرا
 
 jobs:
   generate:
@@ -10,7 +10,8 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}  # توکن پیش‌فرض گیت‌هاب
+          fetch-depth: 0  # کل تاریخچه رو بگیر
 
       - name: Generate snake SVGs
         uses: Platane/snk/svg-only@v3
@@ -23,7 +24,7 @@ jobs:
       - name: Commit and push
         run: |
           git config --global user.name "MohammadJavadQm"
-          git config --global user.email "mohammadjavad.m@gmail.com"  # ایمیلت رو بذار
+          git config --global user.email "mohammadjavad.m@gmail.com"
           git add output/*
-          git commit -m "Add generated snake SVGs" || exit 0
-          git push
+          git commit -m "Add generated snake SVGs" || echo "No changes to commit"
+          git push https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/MohammadJavadQm/mohammadjavadQM.git main
